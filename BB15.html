@@ -24,20 +24,52 @@ p {text-align: center;}
   </head>
 
 <body>
-<div class="video_wrapper">
-  <iframe src="https://vk.com/video_ext.php?oid=668495284&id=456239027&hash=a9580dc443bd6ccc" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe><style>
-.video_wrapper {
-position: relative;
-padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
-}
-iframe{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-</style>
+
+  <div class='video'>
+
+  <script src="https://use.fontawesome.com/20603b964f.js"></script>
+
+<script type="text/javascript" src="https://content.jwplatform.com/libraries/LJ361JYj.js"></script>
+
+		<script type="text/javascript">jwplayer.key = 'ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=';</script><div id="myElement"></div><script type="text/javascript">
+
+					    jwplayer("myElement").setup({
+
+								image: "https://img.indiaforums.com/media/640x0/51/8459-bigg-boss-15-salman-khan.jpg",
+
+					    		aspectratio: "16:9",
+
+								width: '100%',
+
+								aspectratio: '16:9',
+
+					    		autostart: false,
+
+				file : 'http://173.199.120.51/hls/chc.m3u8',
+
+				abouttext: 'FILMKACA',
+
+				aboutlink: 'http://filmkaca.xyz',
+
+				tracks:[{"file":"<?php echo $cc; ?>","label":"Indonesia","kind":"captions","default":"true"}],
+
+				captions: {color: '#ffb800',fontSize: 30,backgroundOpacity: 0},
+
+				sharing: {
+
+					sites: ['facebook','twitter','tumblr','googleplus',{icon: '//support-static.jwplayer.com/images/awesome.svg', src: 'http://www.jwplayer.com/?', label:'jwplayer'}],
+
+					code: encodeURI("<iframe src='<?php echo $sharing;?>' width='480' height='320'></iframe>"),
+
+					link: "<?php echo $sharing;?>"
+
+						}
+
+						    })
+
+					</script>
+
+  </div>
 <hr>
 </div>
 <img width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRribbhR0ex5Cf-_PbwqWWWmxcJHXwSoY5jMQ&usqp=CAU">
