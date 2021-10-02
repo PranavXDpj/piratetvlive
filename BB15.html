@@ -22,9 +22,21 @@ p {text-align: center;}
   </head>
 
 <body>
-
-  <iframe src="https://vk.com/video_ext.php?oid=668495284&id=456239027&hash=a9580dc443bd6ccc" width="100%" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
+<div class="video_wrapper">
+  <iframe src="https://vk.com/video_ext.php?oid=668495284&id=456239027&hash=a9580dc443bd6ccc" width="100%" height="100%" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+<style>
+.video_wrapper {
+position: relative;
+padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+}
+iframe{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+</style>
   </body>
 
 </html><hr>
