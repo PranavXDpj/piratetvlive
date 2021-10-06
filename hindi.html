@@ -15,44 +15,43 @@ div {text-align: center;}
 </style>
 <hr>
 
-<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
-<video id="video-id"><source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-<script>
-    var myFP = fluidPlayer(
-        'video-id',	{
-	"layoutControls": {
-		"controlBar": {
-			"autoHideTimeout": 3,
-			"animated": true,
-			"autoHide": true
-		},
-		"htmlOnPauseBlock": {
-			"html": null,
-			"height": 200px,
-			"width": 100%
-		},
-		"autoPlay": true,
-		"mute": true,
-		"allowTheatre": true,
-		"playPauseAnimation": false,
-		"playbackRateEnabled": false,
-		"allowDownload": false,
-		"playButtonShowing": true,
-		"fillToContainer": false,
-		"posterImage": ""
-	},
-	"vastOptions": {
-		"adList": [
-			{
-				"roll": "preRoll",
-				"vastTag": "https://syndication.exdynsrv.com/splash.php?idzone=4345448",
-				"adText": ""
-			}
-		],
-		"adCTAText": false,
-		"adCTATextPosition": ""
-	}
-}
+<link rel="stylesheet" href="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.css" type="text/css"/>
+<script src="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
+<video id="movie-video" controls controls="" controlslist="nodownload" preload="metadata" width="360">
+<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+
+<script type="text/javascript">
+  var testVideo = fluidPlayer(
+    "movie-video",
+    {			        	
+      vastOptions: {
+        adCTAText: false,
+        skipButtonCaption: 'Aguarde 20 segundos',
+        skipButtonClickCaption: 'Assistir o filme <span class="skip_button_icon"></span>',
+        "adList": [
+          {
+            "roll": "preRoll",
+            "vastTag": "https://syndication.exdynsrv.com/splash.php?idzone=2916384"
+          },
+          {
+            "roll": "midRoll",
+            "vastTag": "https://syndication.exdynsrv.com/splash.php?idzone=2916384",
+            "timer": 10
+          },
+          {
+            "roll": "midRoll",
+            "vastTag": "https://syndication.exdynsrv.com/splash.php?idzone=2916384",
+            "timer": 20
+          },
+          {
+            "roll": "postRoll",
+            "vastTag": "https://syndication.exdynsrv.com/splash.php?idzone=2916384"
+          }
+        ]
+      }			            
+    }
+
+  );
 </script>
 <hr>
 <a href="https://piratetvlive.netlify.app">
