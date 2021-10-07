@@ -53,6 +53,35 @@ div {text-align: center;}
 
   );
 </script>
+<div id="image-slider" class="splide">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8D-hgQt0JQnbiBBKGJxK3VWdawVY2nOIGlQ&usqp=CAU">
+			</li>
+			<li class="splide__slide">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8D-hgQt0JQnbiBBKGJxK3VWdawVY2nOIGlQ&usqp=CAU">
+			</li>
+			<li class="splide__slide">
+				<img src="image03.jpg">
+			</li>
+		</ul>
+  </div>
+</div>
+<style>
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+</style>
+<script>
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-slider' ).mount();
+  } );
+</script>
+<script>
+  new Splide( '#image-slider' ).mount();
+</script>
 <hr>
 <a href="https://piratetvlive.netlify.app">
 <p href="https://piratetvlive.netlify.app">CLICK HERE TO WATCH IN ENGLISH</p>
