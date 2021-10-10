@@ -1,69 +1,48 @@
 <div class="container">
-  <div class="slide">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3qYI4t_0R3JOW0H9ryAYzQ9AkLUmYSp9fBQ&usqp=CAU" height="500px" width="100%">
-
-  </div>
-  <div class="slide">2</div>
-  <div class="slide">3</div>
-  <div class="slide">4</div>
-  <div class="slide">5</div>
-  <div class="slide">6</div>
-  <div class="slide">7</div>
-  <div class="slide">8</div>
-  <div class="slide">9</div>
-  <div class="slide">10</div>
+  <div class="Hh">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3qYI4t_0R3JOW0H9ryAYzQ9AkLUmYSp9fBQ&usqp=CAU" width="100%">
+</div>
+  <div class="Jfj">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3qYI4t_0R3JOW0H9ryAYzQ9AkLUmYSp9fBQ&usqp=CAU" width="100%">
+</div>
+  <div class="Uj">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3qYI4t_0R3JOW0H9ryAYzQ9AkLUmYSp9fBQ&usqp=CAU" width="100%">
+</div>
+  <div class="Nn"></div>
+  <div class="Op"></div>
+  <div class="Dp"></div>
+  <div class="Gg"></div>
+  <div class="Heh"></div>
+  <div class="Ohh"></div>
+  <div class="Jon"></div>
 </div>
 <style>
- @import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
-
 .container {
-  scroll-snap-type: x mandatory; // https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type
-  
-  display: flex;
-  width: 100%;
-  overflow-x: auto;
-  scrollbar-width: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
 }
 
-.slide {
-  scroll-snap-align: center; // https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-align
-  
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 400px;
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* ============== */
-  background: #9D50BB;
-  background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);
-  background: linear-gradient(to right, #6E48AA, #9D50BB);
-  color: #fff;
-  font-family: 'Rubik Beastly', cursive;
-  font-size: 4rem;
-  
-  &:nth-child(2n) {
-    background: #7F7FD5;
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-  }
-  
-  &:nth-child(3n) {
-    background: #f12711;
-    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
-    background: linear-gradient(to right, #f5af19, #f12711);
-  }
-}
+.Hh { grid-area: 1 / 1 / 2 / 2; }
+
+.Jfj { grid-area: 1 / 1 / 2 / 3; }
+
+.Uj { grid-area: 1 / 2 / 2 / 3; }
+
+.Nn { grid-area: 1 / 3 / 2 / 4; }
+
+.Op { grid-area: 2 / 1 / 3 / 2; }
+
+.Dp { grid-area: 2 / 2 / 3 / 3; }
+
+.Gg { grid-area: 2 / 3 / 3 / 4; }
+
+.Heh { grid-area: 3 / 1 / 4 / 2; }
+
+.Ohh { grid-area: 3 / 2 / 4 / 3; }
+
+.Jon { grid-area: 3 / 3 / 4 / 4; }
 
 </style>
