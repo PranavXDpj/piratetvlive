@@ -1,5 +1,136 @@
 <!DOCTYPE html>
-		
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Here we have a simple Nav element -->
+<nav>
+  <!--  Nav will have two parts -> 1) for Logo(with logo we'll have menu icon for mobile as well but it'll be hidden on desktop) 2) Nav list  -->
+
+  <!--  Logo and menu div item  -->
+  <div class="logo">
+    <img width="100px" src="https://raw.githubusercontent.com/PranavXDpj/piratetvlive/main/cooltext395086545765586.png">
+    <!--   This will only be visible on small devices   -->
+    <div class="menu-icon">
+      <!--    Used this icon from Font awesome whose script is at last    -->
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+  <!--  This is second item of the nav which we use to display navList  -->
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Blogs</a></li>
+  </ul>
+</nav>
+<!-- CDN for fontawesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+<style>
+/* Global reset for the document and using border-box sizing as it includes margin and border inside the box(google about this to cross check) */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* I set the nav display to flex so the two nav item(logo div and navlist) are seperated */
+nav {
+  background: deepskyblue;
+  padding: 1.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Menu is not visible on desktop view */
+.menu-icon {
+  display: none;
+}
+
+/* We use flexbox to style the navList  */
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+li {
+  list-style: none;
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover,
+li:active {
+  transform: scale(1.1) rotate3d(1, 1, 1, -10deg);
+}
+
+a {
+  padding: 0.4rem;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: white;
+  background: maroon;
+}
+
+/* Media Query for screens below 650px (you can have more Media Queries) */
+@media only screen and (max-width: 650px) {
+  /*  We set the flex direction to column on small screens  */
+  nav {
+    flex-direction: column;
+  }
+  /*  the logo div is styles for small screens using flexbox  */
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*  The menu icon is now displayed  */
+  .menu-icon {
+    display: block;
+    font-size: 1.6rem;
+  }
+
+  /*  By default the navList isnt visible althought its styled  */
+  ul {
+    display: none;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 100%;
+  }
+  /*  If we have open class on ul(navList) then we display it (we'll use JS for toggling the classList)  */
+  ul.open {
+    display: flex;
+  }
+  /*  list items style on small screens  */
+  li {
+    padding: 0.6rem;
+    text-align: center;
+  }
+}
+</style>
+<script>
+// We select the menu div from DOM along with Navlist(ul)
+const menu = document.querySelector(".menu-icon");
+const mobileNav = document.querySelector("ul");
+
+console.log(menu, mobileNav);
+
+// We attach an eventListener on menu so it will listen to whenever we click on menu
+menu.addEventListener("click", function () {
+  // We toggle the open class on click which makes our navList visible
+  // If the class is there it will remove it else will add it on click
+  mobileNav.classList.toggle("open");
+});
+</script>
+</head>		
 <body>		
 <meta charset="UTF-8">
   <meta name="description" content="Free Movies , Web Series , TV Shows And Live TV">
