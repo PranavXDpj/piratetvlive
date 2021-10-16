@@ -189,6 +189,138 @@ menu.addEventListener("click", function () {
 <div class="gcse-search"></div>
 </div>
 <hr style="height:2px;border-width:0;color:AliceBlue;background-color:AliceBlue">
+<div id="hcg-slider-1" class="hcg-slider">
+<div class="hcg-slide-container">
+	<div class="hcg-slider-body">
+		<a class="hcg-slides animated" style="display:block">
+			<span class="hcg-slide-number">1/5</span>
+			<img src="https://html-generator.com/uploads/images/2021/10/16/621922B114W928W.jpg" alt="Bigg Boss">
+			<span class="hcg-slide-text">Bigg Boss</span>
+		</a>
+	</div>
+</div>
+</div>
+<style>
+#hcg-slider-1 .hcg-slide-container {
+	width: 300px;
+	height: 175px;
+}
+.hcg-slider {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hcg-slide-container {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.hcg-slides {
+	display: none;
+	text-align: center;
+	overflow: hidden;
+}
+.hcg-slides img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	border-radius: 5px;
+	border: solid 1px #a0a0a0;
+	vertical-align: middle;
+}
+.hcg-slide-text {
+	color: #ffffff;
+	font-size: 14px;
+	padding: 3px 5px;
+	position: absolute;
+	bottom: 0;
+	border-radius: 5px;
+	left: 50%;
+	text-align: center;
+	text-shadow: 0 0 2px #000;
+	background-color: rgba(255,255,255,0.30);
+	display: inline-block;
+	transform: translate(-50%, -5px);
+}
+.hcg-slide-number {
+	color: #ffffff;
+	font-size: 12px;
+	padding: 4px 7px;
+	position: absolute;
+	border-radius: 5px;
+	top: 5px;
+	left: 5px;
+	background-color: rgba(255,255,255,0.30);
+}
+/************CSS Animation***********/
+
+.animated { 
+	animation-name: fadeInRight; 
+	animation-duration: 1s;
+}
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.fadeInRight {
+	animation-name: fadeInRight;
+}
+
+
+</style>
+<script>
+(function(){
+//If you want to include more images, add the link name and URL of the image in the array list below.
+	let images_list = [
+		{"url":"https://html-generator.com/uploads/images/2021/10/16/621922B114W928W.jpg","name":"Bigg Boss","link":"https://funntv.ga/biggboss"},
+		{"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqF65awYbRIjY4W00T3qxaAQu3PH0JpCDtg&usqp=CAU","name":"Dhindora","link":"https://funntv.ga/dhindora"}
+	];
+
+	let slider_id = document.querySelector("#hcg-slider-1");
+
+	// append all images
+	let dots_div = "";
+	let images_div = "";
+	for (let i = 0; i < images_list.length; i++) {
+		// if no link without href="" tag
+		let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+		images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:block"':'')+'>'+
+						'<span class="hcg-slide-number">'+(i+1)+'/'+images_list.length+'</span>'+
+						'<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+						'<span class="hcg-slide-text">'+images_list[i].name+'</span>'+
+					 '</a>';
+	}
+	slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+	let slide_index = 0;
+
+	let images = slider_id.querySelectorAll(".hcg-slides");
+	function showSlides() {
+		if (slide_index > images.length-1) {
+			slide_index = 0;
+		}
+		if (slide_index < 0) {
+			slide_index = images.length-1;
+		}
+		for (let i = 0; i < images.length; i++) {
+			images[i].style.display = "none";
+			if (i == slide_index) {
+				images[i].style.display = "block";
+			}
+		}
+	}
+
+	setInterval(function(){
+		slide_index++;
+		showSlides();
+	}, 2000);
+
+})();
+</script>
 <body style="background-color:Black;">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <img src="https://raw.githubusercontent.com/PranavXDpj/piratetvlive/main/cooltext395045271638477.png" width="200px">
