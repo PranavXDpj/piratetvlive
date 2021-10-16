@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!-- Here we have a simple Nav element -->
 <nav>
   <!--  Nav will have two parts -> 1) for Logo(with logo we'll have menu icon for mobile as well but it'll be hidden on desktop) 2) Nav list  -->
@@ -130,7 +131,51 @@ menu.addEventListener("click", function () {
   mobileNav.classList.toggle("open");
 });
 </script>
-</head>		
+</head>	
+		<div class="container">
+			<div class="image">
+				<a href=""><img src="https://r73.cooltext.com/rendered/cooltext395498659771452.png"/></a>
+				<div class="overlay"><img src="https://r73.cooltext.com/rendered/cooltext395498659771452.png"/></div>
+			</div>
+			<div class="image">
+				<a href=""><img src="https://r73.cooltext.com/rendered/cooltext395498687222487.png"/></a>
+				<div class="overlay"><img src="https://r73.cooltext.com/rendered/cooltext395498687222487.png"/></div>
+			</div>
+			<div class="image">
+				<a href=""><img src="https://r72.cooltext.com/rendered/cooltext395498499548793.png"/></a>
+				<div class="overlay"><img src="https://r72.cooltext.com/rendered/cooltext395498499548793.png"/></div>
+			</div>
+		</div>
+	<style>
+			.container {
+					max-width: 940px;
+					font-size: 0;
+				}
+				.image {
+					display: inline-block;
+					position: relative;
+					margin: 1%;
+					width: 31.3%;
+				}
+				 .image img { 
+					height: auto;
+					width: 100%; 
+				}
+				.overlay {
+					position: absolute;
+					width: 100%;
+					bottom: 0;
+					opacity: 0;
+					transition: all 0.5s ease;
+				}
+				.overlay:hover {
+					opacity: 1;
+				}
+				.overlay img{
+					height: auto;
+					width: 100%;
+				}
+</style>
 <body>		
 <meta charset="UTF-8">
   <meta name="description" content="Free Movies , Web Series , TV Shows And Live TV">
