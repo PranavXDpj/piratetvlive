@@ -1,25 +1,25 @@
-<body style="background-color:black;">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div class="container">
-  <iframe class="responsive-iframe" src="https://youtube.com/embed/HMKoWrjh0LA" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="100%" allowfullscreen></iframe>
-</div>
-<style>
-.container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
 
-/* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
-</style>
-<iframe data-aa="1819372" src="//ad.a-ads.com/1819372?size=300x250" style="width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;" ></iframe>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+<body style="background-color:black;">
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+<iframe data-aa="1837484" src="//ad.a-ads.com/1837484?size=320x50" style="width:100%; height:50px; border:0px; padding:0; overflow:hidden; background-color: transparent;" ></iframe>
+<!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "ssmusicpresent"
+  });
+</script>
+<iframe data-aa="1837484" src="//ad.a-ads.com/1837484?size=320x50" style="width:320px; height:50px; border:0px; padding:0; overflow:hidden; background-color:black;" ></iframe></body>
+<iframe
+  id="chat_embed"
+  src="https://www.twitch.tv/embed/ssmusicpresent/chat?parent=www.example.com"
+  height="500"
+  width="100%">
+</iframe>
