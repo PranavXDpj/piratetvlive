@@ -41,13 +41,14 @@ body {
     }
 }
 </style>
+<script type="text/javascript" src="https://www.24-7pressrelease.com/js/newsfeed.js"></script>
+<script type="text/javascript" src="https://www.24-7pressrelease.com/js/js_press_releases.php?category_id=423&limit=20"></script>
 <script type="text/javascript">
-med_size = '160x600';
-med_content='';
-med_content1='47';
-border_color = '000000';
-link_color = '0033FF';
-text_color = '000000';
-url='coronavirus-news';
+js_style = 1;
+target = "_blank";
+if (newsfeed){
+	showNews(newsfeed, js_style);
+} else {
+	document.write("News feeds did not import correctly. Please contact the 24-7 pressrelease administrators");
+}
 </script>
-<script type="text/javascript" src="https://www.medindia.net/free-downloads/news-widget/widget.js"></script>
