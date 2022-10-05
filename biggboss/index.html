@@ -2,8 +2,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 <body style="background-color:black;">
-<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
-<iframe src="https://daijiolivestream.akamaized.net/bpk-tv/Biggboss02_Hindi24X7Live22_voot_MOB/output03/index.m3u8?hdnea=st=1664957280~exp=1664957580~acl=*~id=bdb4f943-3017-4995-8530-be8f8ac9e611~hmac=a728521594743d021ae4681679e1e6b7f32b89fa5b3b14f98b6796af304c9708&originpath=/linear/hls/pb/event/ajt4T3y9QXaYnDEaH4gMoA/stream/b87d7f9a-998a-4fd8-bef2-b2549d659d0e:TPE/master.m3u864951975~acl=*~id=a6dfdd6c-6523-4fd9-87b7-14ddc6890fd9~hmac=60b5135d6196968e2e353a593ab7f623defcc2904c47b20ba2d5a19dd51301f4&originpath=/linear/hls/pb/event/ajt4T3y9QXaYnDEaH4gMoA/stream/1b63d65b-c940-4b45-885e-979fda63929b:TPE/master.m3u8" frameborder="0" allowfullscreen="true" scrolling="no" height="250" width="100%"></iframe>
+<video id="player" class="video-js vjs-default-skin" controls preload="auto" autoplay controls height="360" width="100%">
+							<source src="https://daijiolivestream.akamaized.net/bpk-tv/Biggboss02_Hindi24X7Live22_voot_MOB/output03/index.m3u8?hdnea=st=1664957280~exp=1664957580~acl=*~id=bdb4f943-3017-4995-8530-be8f8ac9e611~hmac=a728521594743d021ae4681679e1e6b7f32b89fa5b3b14f98b6796af304c9708&originpath=/linear/hls/pb/event/ajt4T3y9QXaYnDEaH4gMoA/stream/b87d7f9a-998a-4fd8-bef2-b2549d659d0e:TPE/master.m3u8" type="application/x-mpegURL">
+</video>
+<script>
+var player = videojs('player', {});
 
+player.on(['loadstart', 'play', 'playing', 'firstplay', 'pause', 'ended', 'adplay', 'adplaying', 'adfirstplay', 'adpause', 'adended', 'contentplay', 'contentplaying', 'contentfirstplay', 'contentpause', 'contentended', 'contentupdate'], function(e) {
+  console.warn('VIDEOJS player event: ',  e.type);
+});
+</script>
 <iframe data-aa="1837484" src="//ad.a-ads.com/1837484?size=320x50" style="width:320px; height:50px; border:0px; padding:0; overflow:hidden; background-color:black;" ></iframe></body>
  <iframe src="https://www5.cbox.ws/box/?boxid=929032&boxtag=XEOVeL" width="100%" height="260" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
